@@ -1,0 +1,471 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('cafehero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el header */
+/* Estilos para el header */
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Estilos para el logo a la izquierda */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para el título */
+header h1 {
+    font-size: 36px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* Ajustar los márgenes para pantallas más pequeñas */
+nav ul li {
+    margin-right: 5px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin-right: 5px;
+    }
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #836f01;
+}
+
+
+
+
+
+/* Estilos para el contenido */
+.contenido {
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* Estilos para el header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #FFD700;
+    /* Color dorado para el título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenido h2 {
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para el contenido adicional (inicialmente oculto) */
+.contenido-adicional-historia {
+    display: none;
+}
+
+/* Estilos para el botón de expansión */
+.expandir-boton-historia {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Fondo blanco semitransparente */
+    color: #000;
+    /* Color de texto negro o el que desees */
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    /* Tamaño de relleno ajustado */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilos para el icono en el botón */
+.expandir-boton-historia i {
+    font-size: 18px;
+    /* Tamaño de fuente reducido */
+    margin-right: 3px;
+    /* Espacio entre el icono y el texto del botón */
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el botón */
+.expandir-boton-historia:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    /* Cambio de color al pasar el cursor */
+    color: #fff;
+    /* Color de texto al pasar el cursor */
+}
+
+
+/* Estilos para el contenido adicional (inicialmente oculto) del menú */
+.contenido-adicional-menu {
+    display: none;
+    text-align: left;
+}
+
+.contenido-adicional-postres {
+    display: none;
+    /* Inicialmente oculto */
+}
+
+
+.contenido-adicional-menu h2 {
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+
+/* Estilos para el botón de expansión del menú */
+.expandir-boton-menu {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Fondo blanco semitransparente */
+    color: #000;
+    /* Color de texto negro o el que desees */
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    /* Tamaño de relleno ajustado */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilos para el icono en el botón de expansión del menú */
+.expandir-boton-menu i {
+    font-size: 18px;
+    /* Tamaño de fuente reducido */
+    margin-right: 3px;
+    /* Espacio entre el icono y el texto del botón */
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el botón de expansión del menú */
+.expandir-boton-menu:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    /* Cambio de color al pasar el cursor */
+    color: #fff;
+    /* Color de texto al pasar el cursor */
+}
+
+
+/* Estilos para el contenedor "titulo-y-boton" */
+.titulo-y-boton {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+/* Estilos para el botón "Ver más" más pequeño y con margen inferior */
+.ver-mas-btn {
+    background-color: #FFD700;
+    /* Color de fondo amarillo */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 10px;
+    /* Reducir el radio del borde para hacerlo más pequeño */
+    padding: 2px 6px;
+    /* Tamaño de relleno ajustado para hacerlo más pequeño */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    margin-top: 22px;
+    margin-left: 10px;
+    /* Alinea a la derecha */
+    margin-bottom: 10px;
+    /* Agregar margen inferior para separarlo del botón de flecha */
+}
+
+
+/* Estilos para el contenido adicional */
+.contenido-adicional-desayunosb {
+    display: none;
+    /* Inicialmente oculto */
+}
+
+/* Estilos para el contenedor del título y el botón */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    /* Alinear elementos verticalmente */
+    align-items: center;
+    /* Centro vertical del contenido */
+}
+
+.ver-mas-btn-postres {
+    background-color: #FFD700;
+    /* Color de fondo amarillo */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 10px;
+    /* Reducir el radio del borde para hacerlo más pequeño */
+    padding: 2px 6px;
+    /* Tamaño de relleno ajustado para hacerlo más pequeño */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    margin-top: 22px;
+    margin-left: 10px;
+    /* Alinea a la derecha */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenido adicional */
+.contenido-adicional-desayunoss {
+    display: none;
+    /* Inicialmente oculto */
+}
+
+.ver-mas-btn-desayunoss {
+    background-color: #FFD700;
+    /* Color de fondo amarillo */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 10px;
+    /* Reducir el radio del borde para hacerlo más pequeño */
+    padding: 2px 6px;
+    /* Tamaño de relleno ajustado para hacerlo más pequeño */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    margin-top: 22px;
+    margin-left: 10px;
+    /* Alinea a la derecha */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón "Ver más" más pequeño y con margen inferior */
+.ver-mas-btn-sandwiches {
+    background-color: #FFD700;
+    /* Color de fondo amarillo */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 10px;
+    /* Reducir el radio del borde para hacerlo más pequeño */
+    padding: 2px 6px;
+    /* Tamaño de relleno ajustado para hacerlo más pequeño */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    margin-top: 22px;
+    margin-left: 10px;
+    /* Alinea a la derecha */
+    margin-bottom: 10px;
+    /* Agregar margen inferior para separarlo del botón de flecha */
+}
+
+/* Estilos para el contenido adicional */
+.contenido-adicional-sandwiches {
+    display: none;
+    /* Inicialmente oculto */
+}
+
+#ubicacion {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#ubicacion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+#ubicacion p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#ubicacion a {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#ubicacion a:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    color: #fff;
+}
+
+.expandir-boton-ubicacion {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Fondo blanco semitransparente */
+    color: #000;
+    /* Color de texto negro o el que desees */
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    /* Tamaño de relleno ajustado */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilos para el icono en el botón */
+.expandir-boton-ubicacion i {
+    font-size: 18px;
+    /* Tamaño de fuente reducido */
+    margin-right: 3px;
+    /* Espacio entre el icono y el texto del botón */
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el botón */
+.expandir-boton-ubicacion:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    /* Cambio de color al pasar el cursor */
+    color: #fff;
+    /* Color de texto al pasar el cursor */
+}
+
+.contenido-adicional-ubicacion {
+    display: none;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+
+    /* Ajustes para pantallas más pequeñas (tablets y teléfonos) */
+    .logo {
+        width: 80px;
+        /* Reduce el tamaño del logo */
+    }
+
+    .header h1 {
+        font-size: 28px;
+        /* Reduce el tamaño del título */
+    }
+
+    /* Ajusta otros estilos según sea necesario para pantallas pequeñas */
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes para pantallas aún más pequeñas (teléfonos) */
+    .logo {
+        width: 60px;
+        /* Reduce el tamaño del logo */
+    }
+
+    .header h1 {
+        font-size: 24px;
+        /* Reduce el tamaño del título */
+    }
+
+    /* Ajusta otros estilos según sea necesario para pantallas pequeñas */
+}
+
+/* Estilos para el mensaje de WhatsApp */
+a[href^="https://api.whatsapp.com"] {
+    position: fixed;
+    bottom: 10px;
+    /* Margen inferior de 10px */
+    right: 10px;
+    /* Margen derecho de 10px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    /* Color del texto */
+    background-color: #25d366;
+    /* Color de fondo del botón de WhatsApp */
+    padding: 10px;
+    /* Espacio interior del botón de WhatsApp */
+    border-radius: 5px;
+    /* Bordes redondeados del botón */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para resaltar el botón */
+    z-index: 999;
+    /* Asegura que esté encima de otros elementos */
+}
+
+a[href^="https://api.whatsapp.com"] img {
+    width: 32px;
+    /* Tamaño del icono de WhatsApp */
+    height: 32px;
+    margin-right: 10px;
+    /* Espacio entre el icono y el texto */
+}
+
+a[href^="https://api.whatsapp.com"] span {
+    font-weight: bold;
+    font-size: 16px;
+    /* Tamaño del texto */
+    color: white;
+    /* Color del texto */
+}
+  
