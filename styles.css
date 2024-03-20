@@ -1,0 +1,376 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('cafehero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 5px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin-right: 5px;
+    }
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #836f01;
+}
+
+.contenido {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenido h2 {
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contenido-adicional-historia {
+    display: none;
+}
+
+.expandir-boton-historia {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.expandir-boton-historia i {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.expandir-boton-historia:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    color: #fff;
+
+}
+
+
+/* Contenido Adicional Menú */
+.contenido-adicional-menu {
+    display: none;
+    text-align: left;
+}
+
+.contenido-adicional-postres {
+    display: none;
+}
+
+.contenido-adicional-menu h2 {
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+
+/* Btn Menú */
+.expandir-boton-menu {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.expandir-boton-menu i {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.expandir-boton-menu:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    color: #fff;
+}
+
+
+/* Contenedor "titulo-y-boton" */
+.titulo-y-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+/* Botón "Ver más" */
+.ver-mas-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Contenido Adicional DesayunosBebibles */
+.contenido-adicional-desayunosb {
+    display: none;
+    /* Inicialmente oculto */
+}
+
+/* Contenedor del título y el botón */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ver-mas-btn-postres {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contenido Adicional DesayunosSolidos */
+.contenido-adicional-desayunoss {
+    display: none;
+}
+
+.ver-mas-btn-desayunoss {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Btn "Ver más" */
+.ver-mas-btn-sandwiches {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contenido Adicional Sand */
+.contenido-adicional-sandwiches {
+    display: none;
+}
+
+/* Ubicación */
+
+#ubicacion {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#ubicacion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+#ubicacion p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#ubicacion a {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#ubicacion a:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    color: #fff;
+}
+
+.expandir-boton-ubicacion {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.expandir-boton-ubicacion i {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.expandir-boton-ubicacion:hover {
+    background-color: rgba(131, 111, 1, 0.7);
+    color: #fff;
+}
+
+.contenido-adicional-ubicacion {
+    display: none;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+
+    .logo {
+        width: 80px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 60px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
+
+/* WhatsApp */
+
+a[href^="https://api.whatsapp.com"] {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+a[href^="https://api.whatsapp.com"] img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+a[href^="https://api.whatsapp.com"] span {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
